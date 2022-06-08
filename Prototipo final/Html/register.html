@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse</title>
+    <link rel="stylesheet" href="bootstrap.min (1).css">
+    <link rel="stylesheet" href="../Css/styles.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">  
+        <img src="../Recursos/Imagenes/registro.png" alt="" width="50" height="50"> <!-- encabezado-->
+        <div class="container-fluid"><!-- contenido del encabezado -->
+        <h1>Registrarse</h1> 
+        
+        </div>
+
+    </nav>
+    <br><br>
+    <div class="fondoregister">
+    <div class="container">
+        <form action="#">
+        <div class="form-group">
+            Nombres <br>
+            <input type="text" name="nombres" placeholder="Digite su nombre" autofocus required><br><br>
+            Apellidos <br>
+            <input type="text" placeholder="Introducir su apellido"required > <br><br>
+            Tipo de Identificación <br>
+            <select class="btn btn-info">
+            	<option class="dropdown-item">Cedula de ciudadania</option>
+            	<option class="dropdown-item">Tarjeta de identidad</option>
+            	<option class="dropdown-item">C extrangeria</option>
+            </select><br><br>
+            Numero de Identificación <br>
+            <input type="number" placeholder="Identificación" required> <br><br>
+            Fecha de nacimineto <br>
+            <input type="date"required ><br><br>
+            Numero de celular <br>
+            <input type="number" placeholder="Introducir su numero de celular"required > <br><br>
+            <button class="btn btn-info">Dirección GPS</button> <br>
+             Longitud <br> 
+             <input type="number"><br>
+             Latitud <br>
+             <input type="number"><br>
+            ingrese su contraseña <br>
+            <input type="password" placeholder="Ingrese su contraseña"required><br><br>
+            Repita su contraseña <br>
+            <input type="password" placeholder="Repita su contraseña"required>
+<br><br>
+<button onclick="aprobar()" class="btn btn-info" type="reset">Guardar</button> &emsp;
+<input type="reset" value="Cancelar" class="btn btn-info">
+</form>
+        </div>
+        </div>
+    </div>
+
+    <script>
+        function aprobar() {
+            swal('Registro exitoso',':3','success');
+        }
+
+        
+
+    </script>
+    
+</body>
+</html>

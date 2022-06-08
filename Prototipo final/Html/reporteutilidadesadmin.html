@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reporte de utilidades admin</title>
+    <link rel="stylesheet" href="bootstrap.min (1).css">
+    <link rel="stylesheet" href="../Css/styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">  
+        <img src="../Recursos/Imagenes/ganancias.png" alt="" width="50" height="50"> <!-- encabezado-->
+        <div class="container-fluid"><!-- contenido del encabezado -->
+        <h1>Reporte de utilidades </h1> 
+        </div>
+    </nav> <br><br>
+    <form action="#">
+    <div class="textocentro">
+    Ingrese Precio de producto: <br>
+    <input id="costo" type="number"><br><br>
+    Ingrese Costo  del producto: <br>
+    <input id="precio" type="number"><br><br>
+    <button class="btn btn-info" onclick="product()">Calcular</button>
+    <input type="reset" value="Borrar" class="btn btn-info"> <br><br>
+    </form>
+
+    <a id="resultado"></a>
+ Es la ganancia obtenida de producto <br>
+</div>
+</body>
+</html>
+<script>
+    function product() {
+    var cost = document.getElementById("costo").value;
+    var prec = document.getElementById("precio").value;
+    var resta = cost - prec;
+    document.getElementById("resultado").innerHTML = resta;
+    }
+</script>

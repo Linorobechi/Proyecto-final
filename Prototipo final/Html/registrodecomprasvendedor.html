@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de compra</title>
+    <link rel="stylesheet" href="bootstrap.min (1).css">
+    <link rel="stylesheet" href="../Css/styles.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">  
+        <!-- encabezado-->
+<div class="container-fluid"><!-- contenido del encabezado -->
+<h1>Registro de compra</h1></nav> <br>
+
+<form action="#">
+Nombre del cliente <input type="text" placeholder="Introduzca su Nombre"> &emsp;&emsp;&emsp;
+
+Fecha <input type="date" name="" id=""> <br><br>
+
+<table class="table table-hover">
+    <td></td>
+<tr class="table-dark">
+    <td>ID del producto</td> &emsp;&emsp;
+    <td>Cantidad del producto</td>&emsp;&emsp;
+    <td>Descripción del producto</td>&emsp;&emsp;
+    <td>Valor Unitario del producto</td>&emsp;&emsp;
+    <td> Subtotal</td>
+</tr>
+
+
+
+    <tr class="table-primary">
+        <td>9742364832</td> &emsp;&emsp;
+        <td>3</td>&emsp;&emsp;
+        <td>Suéter polo talla #34</td>&emsp;&emsp;
+        <td>$50.000</td>&emsp;&emsp;
+        
+        <td>$150.000</td>
+    </tr>
+
+    <tr class="table-primary">
+        <td>926325327</td> &emsp;&emsp;
+        <td>4</td>&emsp;&emsp;
+        <td>Conjunto deportivo talla M</td>&emsp;&emsp;
+        <td>$40.000</td>&emsp;&emsp;
+        
+        <td>$160.000</td>
+    </tr>
+    <tr class="table-primary">
+        <td>92734722</td> &emsp;&emsp;
+        <td>3</td>&emsp;&emsp;
+        <td>Camiseta Liverpool F.C Talla L</td>&emsp;&emsp;
+        <td>$50.000</td>&emsp;&emsp;
+        
+        <td>$150.000</td>
+    </tr>
+    
+    <tr class="table-primary">
+        <td><input type="number"></td> &emsp;&emsp;
+        <td><input type="number"></td>&emsp;&emsp;
+        <td><input type="text"></td>&emsp;&emsp;
+        <td><input type="number"></td>&emsp;&emsp;
+        <td><input type="number"></td>
+    </tr>
+
+    <tr class="table-primary">
+        <td><input type="number"></td> &emsp;&emsp;
+        <td><input type="number"></td>&emsp;&emsp;
+        <td><input type="text"></td>&emsp;&emsp;
+        <td><input type="number"></td>&emsp;&emsp;
+        <td><input type="number"></td>
+    </tr> 
+
+    <tr class="table-primary">
+        <td><input type="number"></td> &emsp;&emsp;
+        <td><input type="number"></td>&emsp;&emsp;
+        <td><input type="text"></td>&emsp;&emsp;
+        <td><input type="number"></td>&emsp;&emsp;
+        <td><input type="number"></td>
+    </tr>
+    <tr class="table-primary">
+        <td><input type="number"></td> &emsp;&emsp;
+        <td><input type="number"></td>&emsp;&emsp;
+        <td><input type="text"></td>&emsp;&emsp;
+        <td><input type="number"></td>&emsp;&emsp;
+        <td>Total: $460.000</td>
+    </tr>
+</table><br><br>
+<div class="textocentro">
+    <button class="btn btn-info" onclick="ejecutaraccion()">Guardar</button> &emsp;
+    <input type="reset" value="Borrar" class="btn btn-info">
+</form>
+</div>
+</body>
+</html>
+<script>
+    function ejecutaraccion() {
+        
+swal('Registro de compra exitoso',':3','success');
+    }
+</script>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ganancia de utilidad </title>
+    <link rel="stylesheet" href="bootstrap.min (1).css">
+    <link rel="stylesheet" href="../Css/styles.css">
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> 
+        <img src="../Recursos/Imagenes/aumentoporcentaje.webp" alt="" width="60" height="60">  &emsp; &emsp;
+        
+        <h1 >Porcentaje de ganancia de utilidad del producto:</h1>
+        </div>
+    </nav> <br><br>
+    <div class="textocentro">
+    Categoria del producto <br><br>
+    <select class="btn btn-info">
+        <option class="dropdown-item">Sueter</option>
+        <option class="dropdown-item">Bermudas</option>
+        <option class="dropdown-item">Conjuntos</option>
+    </select><br><br><br>
+    Porcentaje a aumetar<br>
+    <input id="porcentaje" type="number">&emsp;%<br><br>
+<button class="btn btn-info" onclick="porc()">Guardar</button> &emsp;&emsp;
+<button class="btn btn-info">Cancelar</button>
+</div>
+</body>
+</html>
+<script>
+    function porc() {
+        var por = document.getElementById("porcentaje").value;
+        
+swal("El porcentaje de aumento del producto es : " + por +"%" );
+    }
+</script>

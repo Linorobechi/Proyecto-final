@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de compra del administrador</title>
+    <link rel="stylesheet" href="bootstrap.min (1).css">
+    <link rel="stylesheet" href="../Css/styles.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">  
+        <!-- encabezado-->
+<div class="container-fluid"><!-- contenido del encabezado -->
+<h1>Registro de compra</h1></nav><br>
+
+<table class="table table-hover">
+<tr class="table-dark">
+    <td>Nombre de producto</td>&emsp;&emsp;
+    <td>Codigo de producto</td>&emsp;&emsp;
+    <td>proveedor</td>&emsp;&emsp;
+    <td>Identificación del proveedor</td>&emsp;&emsp;
+    <td>Fecha compra</td>&emsp;&emsp;
+    <td>cantidad</td>&emsp;&emsp;
+    <td>Precio</td>
+</tr>
+<form action="#">
+<tr class="table-primary">
+    <td>Camiseta Real madrid F.C </td>&emsp;&emsp;
+    <td>192876432345</td>&emsp;&emsp;
+    <td>Puma</td>&emsp;&emsp;
+    <td>1100392960</td>&emsp;&emsp;
+    <td>03/04/2022</td>&emsp;
+    <td>1</td>&emsp;&emsp;
+    <td>$60.000</td>
+
+    <tr class="table-primary">
+        <td>Camiseta Liverpool F.C</td> &emsp;&emsp;
+        <td>12342197821</td>&emsp;&emsp;
+        <td>NIKE</td>&emsp;&emsp;
+        <td>6538276345</td>&emsp;&emsp;
+        <td>02/05/2022</td>&emsp;
+        <td>2</td>&emsp;&emsp;
+        <td>$50.000</td>
+    </tr>
+    <tr class="table-primary">
+        <td>Sueter rosado clasico L.V</td> &emsp;&emsp;
+        <td>16578322987</td>&emsp;&emsp;
+        <td>Polo</td>&emsp;&emsp;
+        <td>9765434252</td>&emsp;&emsp;
+        <td>04/03/2022</td>&emsp;
+        <td>2</td>&emsp;&emsp;
+        <td>$160.000</td>
+    </tr>
+    
+    <tr class="table-primary">
+        <td><input type="text"></td> &emsp;&emsp;
+        <td><input type="number"></td>&emsp;&emsp;
+        <td><input type="text"></td>&emsp;&emsp;
+        <td><input type="number"></td>&emsp;&emsp;
+        <td><input type="date"></td>&emsp;
+        <td><input type="number"></td>&emsp;&emsp;
+        <td><input type="number"></td>
+
+        <tr class="table-primary">
+            <td><input type="text"></td> &emsp;&emsp;
+            <td><input type="number"></td>&emsp;&emsp;
+            <td><input type="text"></td>&emsp;&emsp;
+            <td><input type="number"></td>&emsp;&emsp;
+            <td><input type="date"></td>&emsp;
+            <td><input type="number"></td>&emsp;&emsp;
+            <td><input type="number"></td>
+        </tr>
+
+        <tr class="table-primary">
+            <td><input type="text"></td> &emsp;&emsp;
+            <td><input type="number"></td>&emsp;&emsp;
+            <td><input type="text"></td>&emsp;&emsp;
+            <td><input type="number"></td>&emsp;&emsp;
+            <td><input type="date"></td>&emsp;
+            <td><input type="number"></td>&emsp;&emsp;
+            <td><input type="number"></td>
+        </tr>
+        <tr class="table-primary">
+            <td></td> &emsp;&emsp;
+            <td></td>&emsp;&emsp;
+            <td></td>&emsp;&emsp;
+            <td></td>&emsp;&emsp;
+            <td></td>&emsp;&emsp;
+            <td></td>&emsp;&emsp;
+            <td class="table-dark">Total: $270.000</td>
+        </tr>
+    </tr>
+    
+</tr>
+</table><br> <br>
+
+ <div class="textocentro">
+<button onclick="ejecutar()" class="btn btn-info" type="reset">Guardar</button>
+&emsp;
+<input type="reset" value="Cancelar" class="btn btn-info">
+</form>
+    </div>
+     </div>
+   </div>
+</body>
+</html>
+<script>
+   function ejecutar() {
+       swal('Registro de compra exitoso',':3','success');
+   }
+</script>

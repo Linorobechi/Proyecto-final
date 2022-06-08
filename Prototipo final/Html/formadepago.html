@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Liseth Quesada, Lino Robechis, Andres Velez">
+    <title>Forma de Pago</title>
+    <link rel="stylesheet" href="../Css/styles.css">
+    <link rel="stylesheet" href="bootstrap.min (1).css">
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+</head>
+<body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> 
+            <img src="../Recursos/Imagenes/pago.png" alt="" width="60" height="60">  
+                 <!-- encabezado-->
+        <div class="container-fluid"><!-- contenido del encabezado -->
+        <h1>Forma de Pago</h1></nav> <br><br> 
+    <div class="textocentro">  
+        <form action="">
+    <h3> Seleccione su forma de pago</h3> <br>
+    <select name="formasdepago" class="btn btn-info">
+       <option value="efectivo">Transferencia</option>
+       <option value="transferencia">Efectivo</option>
+       <option value="tarjeta">Tarjeta</option>
+   </select><br><br>
+
+    Valor a pagar <br>
+    <input type="number"><br><br>
+    Numero de tarjeta <br>
+    <input type="number"><br><br>
+    Fecha de vencimiento <br><input type="date" name="" id=""><br><br>
+    <button onclick="pago1()" class="btn btn-info" type="reset">Pagar</button>
+    &emsp;
+   <input type="reset" value="Cancelar" class="btn btn-info">
+   </form>
+</div>
+</body>
+</html>
+<script>
+    function pago1() {
+    
+swal(' Su pago ha sido exitoso',':3','success');
+    }
+</script>
